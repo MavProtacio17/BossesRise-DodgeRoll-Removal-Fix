@@ -2,6 +2,7 @@
 .gradle/
 build/
 dist/
+*.log
 
 # IDE
 .idea/
