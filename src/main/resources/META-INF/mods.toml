@@ -1,12 +1,13 @@
 modLoader="javafml"
 loaderVersion="[47,)"
 license="MIT"
-# issueTrackerURL="https://github.com/<you>/BossesRise-DodgeRoll-Removal-Fix/issues"  # set once your repo exists
+issueTrackerURL="https://github.com/MavProtacio17/BossesRise-DodgeRoll-Removal-Fix/issues"
 
 [[mods]]
 modId="bossesrise_dodgeroll_removal"
 version="1.0.0"
 displayName="BossesRise DodgeRoll Removal Fix"
+displayURL="https://github.com/MavProtacio17/BossesRise-DodgeRoll-Removal-Fix"
 description='''Fully removes the dodge/roll mechanic from Bosses'Rise for players and modpackers who don't want it.
 
 Via mixins (no Bosses'Rise files are edited or redistributed):

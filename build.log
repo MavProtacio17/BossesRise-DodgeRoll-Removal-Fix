@@ -1,0 +1,62 @@
+Downloading https://services.gradle.org/distributions/gradle-8.8-bin.zip
+.............10%.............20%.............30%.............40%.............50%.............60%..............70%.............80%.............90%.............100%
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.8/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+MixinGradle did not locate the diffplug APT plugin, skipping eclipse task configuration
+
+> Task :downloadMcpConfig
+> Task :extractSrg
+> Task :createMcpToSrg
+
+> Task :compileJava
+Note: SpongePowered MIXIN Annotation Processor Version=0.8.5 (MixinGradle Version=0.7.38)
+Note: Supported obfuscation types: ObfuscationServiceMCP supports [notch] ObfuscationServiceFG3 supports [searge]
+C:\Users\maver\curseforge\modprojects\BossesRise-DodgeRoll-Removal-Fix\src\main\java\com\dreampack\brremoval\mixin\BossesRiseKeyMappingsMixin.java:14: warning: Mixin target net.unusual.block_factorys_bosses.init.BossesRiseKeyMappings is public and should be specified in value
+@Mixin(targets = "net.unusual.block_factorys_bosses.init.BossesRiseKeyMappings", remap = false)
+^
+Note: Loading searge mappings from C:\Users\maver\curseforge\modprojects\BossesRise-DodgeRoll-Removal-Fix\build\createMcpToSrg\output.tsrg
+C:\Users\maver\curseforge\modprojects\BossesRise-DodgeRoll-Removal-Fix\src\main\java\com\dreampack\brremoval\mixin\ClientEventsMixin.java:14: warning: Mixin target net.unusual.block_factorys_bosses.event.ClientEvents is public and should be specified in value
+@Mixin(targets = "net.unusual.block_factorys_bosses.event.ClientEvents", remap = false)
+^
+C:\Users\maver\curseforge\modprojects\BossesRise-DodgeRoll-Removal-Fix\src\main\java\com\dreampack\brremoval\mixin\RollCapHandlerMixin.java:14: warning: Mixin target net.unusual.block_factorys_bosses.capability.entity.RollCap$RollCapHandler is public and should be specified in value
+@Mixin(targets = "net.unusual.block_factorys_bosses.capability.entity.RollCap$RollCapHandler", remap = false)
+^
+Note: Writing refmap to C:\Users\maver\curseforge\modprojects\BossesRise-DodgeRoll-Removal-Fix\build\tmp\compileJava\compileJava-refmap.json
+Note: Writing refmap to C:\Users\maver\curseforge\modprojects\BossesRise-DodgeRoll-Removal-Fix\build\tmp\compileJava\compileJava-refmap.json
+Note: Writing searge composite mappings to C:\Users\maver\curseforge\modprojects\BossesRise-DodgeRoll-Removal-Fix\build\tmp\compileJava\compileJava-mappings.tsrg
+Note: Writing refmap to C:\Users\maver\curseforge\modprojects\BossesRise-DodgeRoll-Removal-Fix\build\tmp\compileJava\compileJava-refmap.json
+Note: Writing refmap to C:\Users\maver\curseforge\modprojects\BossesRise-DodgeRoll-Removal-Fix\build\tmp\compileJava\compileJava-refmap.json
+Note: Writing searge composite mappings to C:\Users\maver\curseforge\modprojects\BossesRise-DodgeRoll-Removal-Fix\build\tmp\compileJava\compileJava-mappings.tsrg
+C:\Users\maver\curseforge\modprojects\BossesRise-DodgeRoll-Removal-Fix\src\main\java\com\dreampack\brremoval\mixin\ItemStackMixin.java:27: warning: [removal] ResourceLocation(String,String) in ResourceLocation has been deprecated and marked for removal
+        new ResourceLocation("block_factorys_bosses", "roll_count");
+        ^
+4 warnings
+
+> Task :addMixinsToJar
+> Task :processResources
+> Task :classes
+> Task :jar
+> Task :configureReobfTaskForReobfJar
+> Task :reobfJar
+> Task :configureReobfTaskForReobfJarJar
+> Task :addMixinsToJarJar
+> Task :jarJar SKIPPED
+> Task :reobfJarJar SKIPPED
+> Task :assemble
+> Task :compileTestJava NO-SOURCE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test NO-SOURCE
+> Task :check UP-TO-DATE
+> Task :build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 28s
+11 actionable tasks: 11 executed
