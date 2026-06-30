@@ -13,9 +13,6 @@ It does **not** edit, decompile, or redistribute any Bosses'Rise files. All chan
 | The **roll-count HUD overlay** | `ClientEvents#renderRollGUI` is cancelled, so it is never drawn. |
 | The **`roll_count` attribute on gear** | Stripped from `ItemStack#getAttributeModifiers`, so its tooltip line *and* the now-empty `When in <slot>:` header both disappear, and the attribute is no longer applied. |
 
-### Honest note
-Forge freezes its registries at load, so the `roll_count` **attribute object** itself cannot be deleted from the registry by an external mod without crashing Bosses'Rise's own code (which references it). This mod removes it from everything player-facing; the leftover registry entry is inert and invisible. For a *registry-level* removal, the Bosses'Rise author would need to add a config toggle.
-
 ## Requirements
 - Minecraft **1.20.1**
 - **Forge** 47.x
