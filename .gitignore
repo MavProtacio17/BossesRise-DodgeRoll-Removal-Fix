@@ -1,0 +1,17 @@
+# Gradle / build output
+.gradle/
+build/
+dist/
+
+# IDE
+.idea/
+*.iml
+.eclipse/
+.settings/
+.classpath
+.project
+bin/
+run/
+
+# Compile-only dependency — DO NOT commit (it's the other author's jar)
+libs/*.jar

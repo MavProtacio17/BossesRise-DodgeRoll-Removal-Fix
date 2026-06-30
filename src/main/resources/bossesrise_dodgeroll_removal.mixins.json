@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.dreampack.brremoval.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "bossesrise_dodgeroll_removal.refmap.json",
+  "mixins": [
+    "RollCapHandlerMixin"
+  ],
+  "client": [
+    "BossesRiseKeyMappingsMixin",
+    "ClientEventsMixin",
+    "ItemStackMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

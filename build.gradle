@@ -1,0 +1,50 @@
+plugins {
+    id 'eclipse'
+    id 'net.minecraftforge.gradle' version '[6.0.16,6.2)'
+    id 'org.spongepowered.mixin' version '0.7.+'
+}
+
+version = '1.0.0'
+group = 'com.dreampack.brremoval'
+
+base {
+    archivesName = 'BossesRise-DodgeRoll-Removal-Fix'
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+minecraft {
+    mappings channel: 'official', version: '1.20.1'
+    copyIdeResources = true
+}
+
+mixin {
+    add sourceSets.main, 'bossesrise_dodgeroll_removal.refmap.json'
+    config 'bossesrise_dodgeroll_removal.mixins.json'
+}
+
+repositories {
+    maven { url = 'https://maven.minecraftforge.net/' }
+    maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.20.1-47.4.10'
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    // Compile-time only: lets the Mixin annotation processor resolve Bosses'Rise's
+    // classes to validate the mixin targets. Not bundled, not remapped.
+    compileOnly files('libs/block_factorys_bosses-2.1.2-forge-1.20.1.jar')
+}
+
+tasks.named('jar', Jar).configure {
+    manifest {
+        attributes([
+            'Specification-Title'     : 'bossesrise_dodgeroll_removal',
+            'Specification-Version'   : '1',
+            'Implementation-Title'    : 'BossesRise DodgeRoll Removal Fix',
+            'Implementation-Version'  : project.version,
+            'MixinConfigs'            : 'bossesrise_dodgeroll_removal.mixins.json'
+        ])
+    }
+    finalizedBy 'reobfJar'
+}
